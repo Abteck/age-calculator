@@ -17,7 +17,7 @@ module.exports = {
         "Light-red": "hsl(0, 100%, 67%)",
       },
       fontFamily: {
-        Poppins: "'Poppins', serif",
+        Poppins: "'Poppins', sans-serif",
       },
     },
   },
