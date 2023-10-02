@@ -54,7 +54,8 @@ Users should be able to:
 
 ### What I learned
 
-well I learnt alot I must admit. The part where I have to validate for the errors, I was finding it very difficult to apply the errors on all input filed with a few lines of code. And then i did my research on google and figured a way out(using query selector to call the inputs and iterate over the inputs in search for errors, then displaying the error once the form is submitted).
+well I learnt alot I must admit.I learnt how to use @font-face to add downloaded fonts to my project.
+Also, the part where I have to validate for the errors - I was finding it very difficult to apply the errors on all input filed with a few lines of code. And then i did my research on google and figured a way out(using query selector to call the inputs and iterate over the inputs in search for errors, then displaying the error once the form is submitted).
 Below is a code snippet that solved almost half of my problems.. I used it to iterate over the input fields and display the error message on all when empty upon submission;
 
 ```js
