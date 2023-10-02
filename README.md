@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-using-tailwindcss-js-BtYiU79SwD]
-- Live Site URL: [https://age-calculator-abteck.vercel.app/]
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-using-tailwindcss-js-BtYiU79SwD)
+- Live Site URL: [Demo here](https://age-calculator-abteck.vercel.app/)
 
 ## My process
 
@@ -79,5 +79,5 @@ Moving forward, I'm going to dig deeper on the age calculation part and make sur
 
 ## Author
 
-- Frontend Mentor - [https://www.frontendmentor.io/profile/abteck]
-- Twitter - [https://www.twitter.com/abteck2]
+- Frontend Mentor - [Abteck](https://www.frontendmentor.io/profile/abteck)
+- Twitter - [Abteck2](https://www.twitter.com/abteck2)
