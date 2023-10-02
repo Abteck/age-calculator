@@ -33,10 +33,10 @@ Users should be able to:
 
 ### Screenshot
 
-![<img src="./public/images/age-calc-completed.png" alt ="desktop completed state"]
-![<img src="./public/images/age-calc-desktop-error.png" alt ="desktop error"]
-![<img src="./public/images/age-calc-desktop-whole-error.png" alt ="desktop whole error"]
-![<img src="./public/images/age-calc-mobile-design.png" alt ="mobile design"]
+![<img src="./public/images/age-calc-completed.png" alt ="desktop completed state">]
+![<img src="./public/images/age-calc-desktop-error.png" alt ="desktop error">]
+![<img src="./public/images/age-calc-desktop-whole-error.png" alt ="desktop whole error">]
+![<img src="./public/images/age-calc-mobile-design.png" alt ="mobile design">]
 
 ### Links
 

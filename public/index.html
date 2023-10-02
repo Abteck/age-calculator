@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body class="font-Poppins">
+    <main
+      class="min-h-screen flex items-center justify-center bg-Light-grey p-5"
+    >
+      <form
+        id="form"
+        class="flex flex-col w-full bg-White px-5 py-14 gap-14 md:gap-5 max-w-md"
+      >
+        <!-- INPUTS SECTION -->
+        <section class="flex gap-4">
+          <!-- day container -->
+          <div class="flex flex-col gap-1">
+            <label
+              class="text-[10px] text-Smokey-grey font-semibold tracking-[0.2rem]"
+              for="day-inp"
+              >DAY</label
+            >
+            <input
+              type="number"
+              min="0"
+              name="day"
+              id="day-inp"
+              maxlength="2"
+              placeholder="DD"
+              class="w-20 text-2xl md:w-28 rounded-md py-2 px-3 outline-none border border-Light-grey font-semibold tracking-wider focus:border-Purple"
+              oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            />
+            <small class="text-Light-red text-[10px] italic"></small>
+          </div>
+          <!-- month-container -->
+          <div class="flex flex-col gap-1">
+            <label
+              class="text-[10px] text-Smokey-grey font-semibold tracking-[0.2rem]"
+              for="month-inp"
+              >MONTH</label
+            >
+            <input
+              type="number"
+              name="month"
+              id="month-inp"
+              min="0"
+              maxlength="2"
+              placeholder="MM"
+              class="w-20 text-2xl md:w-28 rounded-md py-2 px-3 outline-none border border-Light-grey font-semibold tracking-wider focus:border-Purple"
+              oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            />
+            <small class="text-Light-red text-[10px] italic"></small>
+          </div>
+          <!-- year - container -->
+          <div class="flex flex-col gap-1">
+            <label
+              class="text-[10px] text-Smokey-grey font-semibold tracking-[0.2rem]"
+              for="year-inp"
+              >YEAR</label
+            >
+            <input
+              type="number"
+              min="0"
+              name="year"
+              id="year-inp"
+              maxlength="4"
+              placeholder="YYYY"
+              class="w-[85px] text-2xl md:w-28 py-2 pl-2 outline-none border border-Light-grey rounded-md font-semibold tracking-wider focus:border-Purple"
+              oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            />
+            <small class="text-Light-red text-[10px] italic"></small>
+          </div>
+        </section>
+
+        <!-- SUBMIT SECTION -->
+        <section id="submit-field" class="relative flex items-center">
+          <hr class="w-full bg-Smokey-grey border" />
+          <button
+            id="button"
+            type="submit"
+            class="flex items-center justify-center absolute left-1/2 -translate-x-1/2 md:static"
+          >
+            <img
+              id="image"
+              src="./images/icon-arrow.svg"
+              alt="submit button"
+              class="bg-Purple rounded-full p-3 w-12 md:w-14"
+            />
+          </button>
+        </section>
+
+        <!-- OUTPUT SECTION -->
+        <section class="text-5xl italic font-bold space-y-1">
+          <p class="flex gap-2">
+            <span id="year-out" class="text-Purple">- -</span>years
+          </p>
+          <p class="flex gap-2">
+            <span id="month-out" class="text-Purple">- -</span>months
+          </p>
+          <p class="flex gap-2">
+            <span id="day-out" class="text-Purple">- -</span>days
+          </p>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
