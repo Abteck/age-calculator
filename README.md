@@ -33,15 +33,15 @@ Users should be able to:
 
 ### Screenshot
 
-![<img src="./public/images/age-calc-completed.png" alt ="desktop completed state">]
-![<img src="./public/images/age-calc-desktop-error.png" alt ="desktop error">]
-![<img src="./public/images/age-calc-desktop-whole-error.png" alt ="desktop whole error">]
-![<img src="./public/images/age-calc-mobile-design.png" alt ="mobile design">]
+!<img src="./public/images/age-calc-completed.png" alt ="desktop completed state">
+!<img src="./public/images/age-calc-desktop-error.png" alt ="desktop error">
+!<img src="./public/images/age-calc-desktop-whole-error.png" alt ="desktop whole error">
+!<img src="./public/images/age-calc-mobile-design.png" alt ="mobile design">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-using-tailwindcss-js-BtYiU79SwD]
+- Live Site URL: [https://age-calculator-abteck.vercel.app/]
 
 ## My process
 
