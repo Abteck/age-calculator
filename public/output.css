@@ -437,7 +437,7 @@ video {
 @font-face {
   font-family: "Poppins";
 
-  src: url("/assets/Poppins-Bold.ttf") format("truetype");
+  src: url("../assets/Poppins-Bold.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -447,7 +447,7 @@ video {
 @font-face {
   font-family: "Poppins";
 
-  src: url("/assets/Poppins-BoldItalic.ttf") format("truetype");
+  src: url("../assets/Poppins-BoldItalic.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -457,7 +457,7 @@ video {
 @font-face {
   font-family: "Poppins";
 
-  src: url("/assets/Poppins-ExtraBold.ttf") format("truetype");
+  src: url("../assets/Poppins-ExtraBold.ttf") format("truetype");
 
   font-weight: 800;
 
@@ -467,7 +467,7 @@ video {
 @font-face {
   font-family: "Poppins";
 
-  src: url("/assets/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  src: url("../assets/Poppins-ExtraBoldItalic.ttf") format("truetype");
 
   font-weight: 800;
 
@@ -477,7 +477,7 @@ video {
 @font-face {
   font-family: "Poppins";
 
-  src: url("/assets/Poppins-Italic.ttf") format("truetype");
+  src: url("../assets/Poppins-Italic.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -487,7 +487,7 @@ video {
 @font-face {
   font-family: "Poppins";
 
-  src: url("/assets/Poppins-Regular.ttf") format("truetype");
+  src: url("../assets/Poppins-Regular.ttf") format("truetype");
 
   font-weight: 400;
 
