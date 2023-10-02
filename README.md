@@ -75,7 +75,7 @@ Moving forward, I'm going to dig deeper on the age calculation part and make sur
 
 ### Useful resources
 
-- [https://www.google.com] - Google is always your friend because nobody is perfect. It hepled me alot and i fully recommend it to anyone facing difficulties with some syntax
+- [google](https://www.google.com) - Google is always your friend. It hepled me alot and I fully recommend it to anyone facing difficulties with some syntax
 
 ## Author
 
