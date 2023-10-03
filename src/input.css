@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 form {
-  border-bottom-right-radius: 160px;
+  border-bottom-right-radius: 140px;
 }
 
 label.error {

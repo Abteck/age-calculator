@@ -19,14 +19,14 @@
     >
       <form
         id="form"
-        class="flex flex-col w-full bg-White px-5 py-14 gap-14 md:gap-5 max-w-md"
+        class="flex flex-col w-full bg-White px-5 py-14 gap-14 md:gap-5 max-w-md md:max-w-xl shadow-2xl"
       >
         <!-- INPUTS SECTION -->
-        <section class="flex gap-4">
+        <section class="flex gap-4 flex-col sm:flex-row w-full">
           <!-- day container -->
           <div class="flex flex-col gap-1">
             <label
-              class="text-[10px] text-Smokey-grey font-semibold tracking-[0.2rem]"
+              class="text-xs text-Smokey-grey font-semibold tracking-[0.2rem]"
               for="day-inp"
               >DAY</label
             >
@@ -37,7 +37,7 @@
               id="day-inp"
               maxlength="2"
               placeholder="DD"
-              class="w-20 text-2xl md:w-28 rounded-md py-2 px-3 outline-none border border-Light-grey font-semibold tracking-wider focus:border-Purple"
+              class="w-full sm:w-20 text-2xl md:w-28 rounded-md py-2 px-3 outline-none border border-Light-grey font-semibold tracking-wider focus:border-Purple"
               oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             />
             <small class="text-Light-red text-[10px] italic"></small>
@@ -45,7 +45,7 @@
           <!-- month-container -->
           <div class="flex flex-col gap-1">
             <label
-              class="text-[10px] text-Smokey-grey font-semibold tracking-[0.2rem]"
+              class="text-xs text-Smokey-grey font-semibold tracking-[0.2rem]"
               for="month-inp"
               >MONTH</label
             >
@@ -56,7 +56,7 @@
               min="0"
               maxlength="2"
               placeholder="MM"
-              class="w-20 text-2xl md:w-28 rounded-md py-2 px-3 outline-none border border-Light-grey font-semibold tracking-wider focus:border-Purple"
+              class="w-full sm:w-20 text-2xl md:w-28 rounded-md py-2 px-3 outline-none border border-Light-grey font-semibold tracking-wider focus:border-Purple"
               oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             />
             <small class="text-Light-red text-[10px] italic"></small>
@@ -64,7 +64,7 @@
           <!-- year - container -->
           <div class="flex flex-col gap-1">
             <label
-              class="text-[10px] text-Smokey-grey font-semibold tracking-[0.2rem]"
+              class="text-xs text-Smokey-grey font-semibold tracking-[0.2rem]"
               for="year-inp"
               >YEAR</label
             >
@@ -75,7 +75,7 @@
               id="year-inp"
               maxlength="4"
               placeholder="YYYY"
-              class="w-[85px] text-2xl md:w-28 py-2 pl-2 outline-none border border-Light-grey rounded-md font-semibold tracking-wider focus:border-Purple"
+              class="w-full sm:w-[85px] text-2xl md:w-28 py-2 pl-2 outline-none border border-Light-grey rounded-md font-semibold tracking-wider focus:border-Purple"
               oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             />
             <small class="text-Light-red text-[10px] italic"></small>
@@ -94,20 +94,22 @@
               id="image"
               src="./images/icon-arrow.svg"
               alt="submit button"
-              class="bg-Purple rounded-full p-3 w-12 md:w-14"
+              class="bg-Purple hover:bg-black transition-all rounded-full p-3 w-14 md:w-20"
             />
           </button>
         </section>
 
         <!-- OUTPUT SECTION -->
-        <section class="text-5xl italic font-bold space-y-1">
-          <p class="flex gap-2">
+        <section
+          class="text-4xl sm:text-5xl md:text-7xl italic font-bold space-y-1"
+        >
+          <p class="flex gap-2 flex-col sm:flex-row">
             <span id="year-out" class="text-Purple">- -</span>years
           </p>
-          <p class="flex gap-2">
+          <p class="flex gap-2 flex-col sm:flex-row">
             <span id="month-out" class="text-Purple">- -</span>months
           </p>
-          <p class="flex gap-2">
+          <p class="flex gap-2 flex-col sm:flex-row">
             <span id="day-out" class="text-Purple">- -</span>days
           </p>
         </section>

@@ -1,6 +1,15 @@
 const form = document.getElementById("form");
 const button = document.getElementById("button");
 const image = document.getElementById("image");
+
+// error and success sounds
+const errorSound = new Audio("./sounds/assets_sounds_error.mp3");
+const pingSound = new Audio("./sounds/assets_sounds_ping.mp3");
+
+const playSound = (sound) => {
+  sound.play();
+};
+
 // inputs
 const dayInp = document.getElementById("day-inp");
 const monthInp = document.getElementById("month-inp");
@@ -26,13 +35,14 @@ function validate() {
 
   // using for each to iterate over all inputs to show error
   inputs.forEach((i) => {
-    const parent = i.parentElement; // a variable that targets the parent element of the inputs
+    const parent = i.parentElement;
 
     //  WHEN ANY FIELD IS EMPTY UPON FORM SUBMITTION
     if (!i.value) {
       i.style.borderColor = "red";
       parent.querySelector("small").innerHTML = "This field is required";
       parent.querySelector("label").classList.add("error");
+      playSound(errorSound);
       validator = false;
 
       // 1-12 WHEN THE MONTH NUMBER IS NOT BETWEEN 1-12
@@ -41,6 +51,7 @@ function validate() {
       monthInp.parentElement.querySelector("small").innerHTML =
         "must be a valid month";
       monthInp.parentElement.querySelector("label").classList.add("error");
+      playSound(errorSound);
       validator = false;
 
       // WHEN THE DAY NUMBER IS NOT BETWEEN 1-31
@@ -49,6 +60,7 @@ function validate() {
       dayInp.parentElement.querySelector("small").innerHTML =
         "must be a valid day";
       dayInp.parentElement.querySelector("label").classList.add("error");
+      playSound(errorSound);
       validator = false;
 
       // WHEN THE YEAR IS IN THE FUTURE
@@ -57,6 +69,7 @@ function validate() {
       yearInp.parentElement.querySelector("small").innerHTML =
         "must be in the past";
       yearInp.parentElement.querySelector("label").classList.add("error");
+      playSound(errorSound);
       validator = false;
 
       // WHEN THE DATE IS INVALID e.g 31/04/1991 (There are 30 days in April)
@@ -72,6 +85,7 @@ function validate() {
       dayInp.parentElement.querySelector("small").innerHTML =
         "not a valid date";
       parent.querySelector("label").classList.add("error");
+      playSound(errorSound);
       validator = false;
     }
 
@@ -80,6 +94,7 @@ function validate() {
       i.style.borderColor = "";
       parent.querySelector("small").innerHTML = "";
       parent.querySelector("label").classList.remove("error");
+      playSound(pingSound);
       validator = true;
     }
   });
